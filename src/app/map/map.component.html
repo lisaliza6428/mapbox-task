@@ -1,0 +1,11 @@
+<h1 class="title">Информация о дорожно-транcпортных происшествиях (ДТП)</h1>
+<div class="container">
+  <div class="map" id="map"></div>
+  <fieldset class="filters">
+    <legend><b>Настроить фильтры по типу ДТП:</b></legend>
+    <div *ngFor="let accident of accidents" class="checkbox">
+      <input type="checkbox" [id]="accident" (click)="changeFilters($event)" >
+      <label [for]="accident">{{ accident }}</label>
+    </div>
+  </fieldset>
+</div>
