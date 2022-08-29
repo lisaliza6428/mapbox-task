@@ -1,14 +1,9 @@
 # Mapbox-Task
 
 Демо: https://lisaliza6428.github.io/mapbox-task/ <br>
-Код: https://lisaliza6428.github.io/mapbox-task/ <br><br>
+Код: https://github.com/lisaliza6428/mapbox-task/tree/master <br><br>
 Интерактивная карта с информацией о количестве дорожно-транспортных происшествий региона страны. <br>
 Карта отображает данные в виде кластеров и даёт возможность настроить фильтрацию по типу ДТП. <br>
 По клику на точку отображается окно с типом ДТП, количеством раненых и погибших.
 
 ![image](https://user-images.githubusercontent.com/87124701/187132988-74344d7a-9a2f-4a08-a486-1087452195eb.png)
-
-
-
-
-
