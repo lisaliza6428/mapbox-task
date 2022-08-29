@@ -19,7 +19,7 @@ export class MapComponent implements OnInit, OnDestroy {
   lng: number;
   data!: GeoDataModel;
   points!: GeoDataModel;
-  accidents!: string[];
+  accidentsTypes!: string[];
   filtersArray: string[];
   subscription!: Subscription;
 
@@ -48,7 +48,7 @@ export class MapComponent implements OnInit, OnDestroy {
     this.data.features.forEach((x: GeoDataItemModel) => {
       accidentTypes.add(x.properties.type);
     });
-    this.accidents = [...accidentTypes];
+    this.accidentsTypes = [...accidentTypes];
   }
 
   private addMap(): void {
