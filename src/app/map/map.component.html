@@ -1,10 +1,1 @@
-<div class="container">
-  <div class="map" id="map"></div>
-  <fieldset class="filters">
-    <legend><b>Настроить фильтры по типу ДТП:</b></legend>
-    <div class="checkbox" *ngFor="let accident of accidentsTypes">
-      <input type="checkbox" [id]="accident" (click)="changeFilters($event)">
-      <label [for]="accident">{{ accident }}</label>
-    </div>
-  </fieldset>
-</div>
+<div class="map" id="map"></div>
