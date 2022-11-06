@@ -1,0 +1,7 @@
+<fieldset class="filters">
+  <legend class="filters-title">Настроить фильтры по типу ДТП:</legend>
+  <div class="filter-checkbox" *ngFor="let accident of dataService.accidentsList">
+    <input class="filter-checkbox__input" type="checkbox" [id]="accident" (click)="filterIsClicked($event)">
+    <label class="filter-checkbox__label" [for]="accident">{{ accident }}</label>
+  </div>
+</fieldset>

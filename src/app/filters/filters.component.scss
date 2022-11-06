@@ -1,0 +1,42 @@
+.filters {
+  width: 350px;
+  font-size: 20px;
+  text-align: justify;
+}
+.filters-title {
+  font-weight: bold;
+ }
+
+.filter-checkbox {
+  position: relative;
+  padding-left: 25px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] {
+  display: none;
+
+  &:checked + label:after {
+    outline: 1px solid #939598;
+    border: 2px solid #fff;
+    width: 14px;
+    height: 14px;
+    background-color: green;
+  }
+}
+
+label {
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 16px;
+    outline: 1px solid #939598;
+    position: absolute;
+    top: 3px;
+    left: -1px;
+    cursor: pointer;
+  }
+}
