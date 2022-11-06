@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
-import { MapComponent } from './map/map.component';
-
 import { HttpClientModule } from '@angular/common/http';
-
+import { AppComponent } from './app.component';
+import { MapComponent } from './map/map.component';
+import { FiltersComponent } from './filters/filters.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
